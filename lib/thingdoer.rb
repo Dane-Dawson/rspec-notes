@@ -9,7 +9,7 @@ class Thingdoer
         puts "Hello"
     end
 
-    #This test shows a way to use include testing. Use include to specify that a collection includes one or more expected objects.
+    #This test shows a way to use include testing. Use include to specify that a collection includes one or more expected objects. Note that even though there are two entries, include only tests if *any* object passes the condition
     def say_hello
         message = ["Hello", "there"]
     end
