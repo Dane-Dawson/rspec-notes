@@ -44,26 +44,26 @@
 #should_not have_all_string_keys (based on custom #has_all_string_keys? method)
     class Hash
         def has_all_string_keys?
-        keys.all? { |k| String === k }
+            keys.all? { |k| String === k }
         end
     end
     
     RSpec.describe Hash do
         context 'with symbol keys' do
-        subject { { :foo => 7, :bar => 5 } }
-        it { is_expected.not_to have_all_string_keys }
+            subject { { :foo => 7, :bar => 5 } }
+            it { is_expected.not_to have_all_string_keys }
         end
     
         context 'with string keys' do
-        subject { { 'foo' => 7, 'bar' => 5 } }
-        it { is_expected.not_to have_all_string_keys } # deliberate failure
+            subject { { 'foo' => 7, 'bar' => 5 } }
+            it { is_expected.not_to have_all_string_keys } # deliberate failure
         end
     end
 
 #matcher arguments are passed on to the predicate method
     class Integer
         def multiple_of?(x)
-        (self % x).zero?
+            (self % x).zero?
         end
     end
     
@@ -79,7 +79,7 @@
 #calling private method with be_predicate causes error
     class WithPrivateMethods
         def secret?
-        true
+            true
         end
         private :secret?
     end
@@ -94,7 +94,7 @@
 #calling private method with have_predicate causes error
     class WithPrivateMethods
         def has_secret?
-        true
+            true
         end
         private :has_secret?
     end

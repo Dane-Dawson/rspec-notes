@@ -7,15 +7,15 @@ expect(obj).to exist # passes if obj.exist? or obj.exists?
         attr_reader :name
     
         def initialize(name)
-        @name = name
+            @name = name
         end
     
         def inspect
-        "<Planet: #{name}>"
+            "<Planet: #{name}>"
         end
     
         def exist? # also works with exists?
-        %w[Mercury Venus Earth Mars Jupiter Saturn Uranus Neptune].include?(name)
+            %w[Mercury Venus Earth Mars Jupiter Saturn Uranus Neptune].include?(name)
         end
     end
     

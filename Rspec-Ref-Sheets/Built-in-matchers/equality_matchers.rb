@@ -20,49 +20,49 @@
     #Compare using eq(==)
         RSpec.describe "a string" do
             it "is equal to another string of the same value" do
-            expect("this string").to eq("this string")
+                expect("this string").to eq("this string")
             end
         
             it "is not equal to another string of a different value" do
-            expect("this string").not_to eq("a different string")
+                expect("this string").not_to eq("a different string")
             end
         end
         
         RSpec.describe "an integer" do
             it "is equal to a float of the same value" do
-            expect(5).to eq(5.0)
+                expect(5).to eq(5.0)
             end
         end
 
     #Compare using ==
         RSpec.describe "a string" do
             it "is equal to another string of the same value" do
-            expect("this string").to be == "this string"
+                expect("this string").to be == "this string"
             end
         
             it "is not equal to another string of a different value" do
-            expect("this string").not_to be == "a different string"
+                expect("this string").not_to be == "a different string"
             end
         end
         
         RSpec.describe "an integer" do
             it "is equal to a float of the same value" do
-            expect(5).to be == 5.0
+                expect(5).to be == 5.0
             end
         end
     
     #compare using eql(eql?)
         RSpec.describe "an integer" do
             it "is equal to another integer of the same value" do
-            expect(5).to eql(5)
+                expect(5).to eql(5)
             end
         
             it "is not equal to another integer of a different value" do
-            expect(5).not_to eql(6)
+                expect(5).not_to eql(6)
             end
         
             it "is not equal to a float of the same value" do
-            expect(5).not_to eql(5.0)
+                expect(5).not_to eql(5.0)
             end
         
         end
@@ -70,16 +70,16 @@
     #Compare using equal (equal?)
         RSpec.describe "a string" do
             it "is equal to itself" do
-            string = "this string"
-            expect(string).to equal(string)
+                string = "this string"
+                expect(string).to equal(string)
             end
         
             it "is not equal to another string of the same value" do
-            expect("this string").not_to equal("this string")
+                expect("this string").not_to equal("this string")
             end
         
             it "is not equal to another string of a different value" do
-            expect("this string").not_to equal("a different string")
+                expect("this string").not_to equal("a different string")
             end
         
         end  
@@ -87,16 +87,16 @@
     #Compare using be (equal?)
         RSpec.describe "a string" do
             it "is equal to itself" do
-            string = "this string"
-            expect(string).to be(string)
+                string = "this string"
+                expect(string).to be(string)
             end
         
             it "is not equal to another string of the same value" do
-            expect("this string").not_to be("this string")
+                expect("this string").not_to be("this string")
             end
         
             it "is not equal to another string of a different value" do
-            expect("this string").not_to be("a different string")
+                expect("this string").not_to be("a different string")
             end
         
         end
