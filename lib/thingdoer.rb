@@ -8,7 +8,7 @@ class Thingdoer
     def return_hello
         return "Hello"
     end
-    
+
     #One more example to show that the last string in the function is the one returned, the test for this function checks for "Goodbye".
     def return_goodbye
         "Hello"
