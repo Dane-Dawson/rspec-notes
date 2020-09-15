@@ -15,8 +15,11 @@ RSpec.describe Thingdoer do
     end
 
     describe '#return_goodbye' do
-        it 'Method return_goodbye should equal Hello' do
+        it 'Method return_goodbye should equal GoodBye' do
+            expect(Thingdoer.new.return_goodbye).not_to eq("Hello")
+            expect(Thingdoer.new.return_goodbye).not_to eq("and")
             expect(Thingdoer.new.return_goodbye).to eq("Goodbye")
+
         end
     end
 
